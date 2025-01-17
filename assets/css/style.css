@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family:'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-family:'Luckiest Guy', 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+h2,
+p {
+    align-self: normal;
+    padding-bottom: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto; 
+}
+
+header p {
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: url(../images/Header_Background.png);
+    background-size: cover;
+    padding: 4rem 2rem;
+}
+
+button {
+    font-family:'Open Sans', 'Trebuchet MS';
+    border-radius: 1.7rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.header__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #a1c1e4;
+  }
+
+.btn-open-navegator {
+    background-color: #23272A;
+    color: white;
+}
+
+.channels,
+.voice,
+.tools,
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.voice,
+.technology {
+    background-color: #F6F6F6;
+}
+
+.technology h1 {
+    color: black;
+    align-self: normal;
+    padding-bottom: 2rem;
+}
+
+footer {
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 10rem;
+    padding: 2rem;
+}
+
+
+
+
+@media screen and (min-width:768px){
+    header {
+        align-items: center;
+        background-image: url(../images/Header_background-desktop.png);
+        background-size:100%;
+        padding: 1.1rem 1.347rem;
+        gap: .1rem
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        padding: 1.4rem 7rem;
+        text-align: center;
+    }
+    .header__buttons {  
+        flex-direction: row;
+    }
+
+    .channels,
+    .tools{
+        flex-direction: row;    
+    }
+    
+    .voice {
+        flex-direction: row-reverse;
+    }
+
+    .technology {
+        align-items: center;
+        gap: .3rem;
+    }
+
+    .technology h1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .technology p {
+        text-align: center;
+    }
+
+    footer img {
+        width: 12rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    h1 {
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        line-height: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+
+    .channels .section-text,
+    .voice .section-text,
+    .tools .section-text {
+    flex: 2;   
+    }
+
+    .channels img,
+    .voice img,
+    .tools img {
+        flex: 4;
+    }
+    
+    .channels,
+    .voice,
+    .tools,
+    .technology {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .technology img {
+        width: 70%;
+    }
+
+    footer img {
+        width: 15rem;
+    }
+}
