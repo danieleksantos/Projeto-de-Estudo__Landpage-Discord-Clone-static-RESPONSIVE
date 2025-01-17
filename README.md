@@ -21,3 +21,6 @@ Durante este projeto, aprimorei:
 - O uso de CSS Flexbox e Grid para organização de layouts.
 - A aplicação de responsividade para dispositivos móveis e desktops.
 - Estruturação semântica em HTML5.
+
+## 🔍 Confira o resultado aqui:
+  https://danieleksantos.github.io/Projeto-de-Estudo__Landpage-Discord-Clone-static-RESPONSIVE/
